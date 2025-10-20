@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <script src="./js/script.js" defer></script>
+  <title>Blog App Web</title>
+</head>
+<body class="blog_page">
+  <header class="header"> 
+    <a href="#" class="logo">Blog App Web</a>
+    <nav class="navbar">
+      
+      <a href="about.html">About</a>  
+      <a href="contact.html">Contact</a>  
+      <button a src="blog-User.html" class="logout-btn">Logout</button>
+      <div class="search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input class="search-input" id="search-input" type="search" placeholder="Search">
+      </div>  
+    </nav>
+  </header>
+
+  <!-- Section Ajouter un nouvel article -->  
+  <section class="Ajoutercontenue">
+    <div class="class_containeir">
+      <p class="message">Bonjour l'administrateur</p>
+      <button class="Ajouter_Button">Ajouter une nouvelle article</button>
+      <div id="article-template" class="hidden">
+        <button class="close-button" onclick="closeArticleForm()">X</button>
+        <h3 class="blog-title">Ajouter un nouvel article</h3>
+        <form id="article-form">
+          <label for="article-title">Titre :</label>
+          <input type="text" id="article-title" placeholder="Saisissez un titre...">
+      
+          <label for="article-image">Télécharger une image :</label>
+          <input type="file" id="article-image" accept="image/*">
+      
+          <label for="article-description">Description :</label>
+          <textarea id="article-description" rows="4" placeholder="Saisissez une description..."></textarea>
+      
+          <button type="submit" class="btn-submit">Ajouter l'article</button>
+        
+        </form>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+          <section class="users-section">
+            <table id="users-table" class="styled-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nom d'utilisateur</th>
+                  <th>Email</th>
+                  <th>Rôle</th>
+                  <th>Actions</th> <!-- Nouvelle colonne pour les actions -->
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Les utilisateurs seront insérés ici -->
+              </tbody>
+            </table>
+            
+          </section>
+
+  <!-- Section pour afficher les articles -->
+  <section class="blog_contenue">
+    <h3>Articles existants :</h3>
+    <div id="articles-list">
+      <!-- Les articles seront chargés ici dynamiquement -->
+    </div>
+    <div id="pagination" class="pagination">
+      <!-- Les boutons de pagination seront ajoutés ici dynamiquement -->
+    </div>
+  </section>
+
+  <!-- Panneau contextuel pour éditer un article -->
+  <div class="details-panel hidden" id="edit-panel">
+    <h3>Modifier l'article</h3>
+    <button onclick="closePanel('edit-panel')" class="btn-close">X</button>
+    <form id="edit-form">
+      <label for="edit-image">Modifier l'image :</label>
+      <input type="file" id="edit-image">
+      <img id="edit-image-preview" src="default.jpg" alt="Aperçu de l'image" class="card-image">
+      <label for="edit-title">Modifier le titre :</label>
+      <input type="text" id="edit-title">
+      <label for="edit-content">Modifier le contenu :</label>
+      <textarea id="edit-content" rows="4"></textarea>
+      <button type="submit" class="btn-submit">Enregistrer</button>
+    </form>
+  </div>
+
+  <!-- Panneau contextuel pour les détails -->
+  <div class="details-panel hidden" id="details-panel">
+    <h3>Détails de l'article</h3>
+    <button onclick="closePanel('details-panel')" class="btn-close">X</button>
+    <img id="details-image" src="" alt="Image de l'article" class="card-image">
+    <h4 id="details-title"></h4>
+    <p id="details-content"></p>
+  </div>
+  <div id="pagination"></div>
+</body>
+</html>

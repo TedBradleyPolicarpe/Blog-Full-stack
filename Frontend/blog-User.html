@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <script src="./js/script.js" defer></script>
+  <title>Blog User</title>
+</head>
+<body class="blog_page">
+  <header class="header"> 
+    <a href="#" class="logo">Blog App Web</a>
+    <nav class="navbar">
+      
+      <a href="about.html">About</a>  
+      
+      <a href="contact.html">Contact</a>  
+      <div class="user-info">
+        <span id="user-name">Utilisateur</span> <!-- Nom de l'utilisateur -->
+        <button class="logout-btn">Logout</button> <!-- Bouton de déconnexion -->
+      </div>
+      <div class="search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input class="search-input" type="search" placeholder="Search">
+      </div>  
+    </nav>
+  </header>
+
+  <!-- Section pour afficher les articles -->
+  <section class="blog_contenue">
+    <h3>Articles :</h3>
+    <div id="articles-list">
+      <!-- Les articles seront chargés ici dynamiquement via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Panneau contextuel pour les détails -->
+  <div class="details-panel hidden" id="details-panel" data-article-id="1">
+    <h3>Détails de l'article</h3>
+    <button onclick="closePanel('details-panel')" class="btn-close">X</button>
+    <img id="details-image" src="" alt="Image de l'article" class="card-image">
+    <h4 id="details-title"></h4>
+    <p id="details-content"></p>
+    <h4>Commentaires :</h4>
+    <ul id="details-comments-list"></ul>
+    <form id="add-comment-form">
+      <input type="text" id="new-comment" placeholder="Ajouter un commentaire..." required>
+      <button type="submit">Commenter</button>
+    </form>
+    <ul id="details-comments-list">
+      <!-- Les commentaires seront affichés ici -->
+    </ul>
+  </div>
+  <div id="pagination"></div>
+</body>
+</html>

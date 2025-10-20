@@ -1,0 +1,44 @@
+body {
+  background-color: #2a203a; 
+  color: #fff;
+}
+
+.hero {
+  background-color: #3c2d56 !important; 
+}
+
+.hero .title,
+.hero .subtitle {
+  color: #d6c3ff; 
+}
+
+.input, .textarea {
+  background-color: #4b356b; 
+  color: #fff;
+  border: 1px solid #5c4685; 
+}
+
+.input:focus, .textarea:focus {
+  border-color: #8e67e6; 
+  box-shadow: 0 0 0 0.2rem rgba(142, 103, 230, 0.25);
+}
+
+.button.is-primary {
+  background-color: #8e67e6; 
+  border-color: #8e67e6;
+  color: #fff;
+}
+
+.button.is-primary:hover {
+  background-color: #7c58d2; 
+  border-color: #7c58d2;
+}
+
+.footer {
+  background-color: #3c2d56; 
+  color: #b2a3d6; 
+}
+
+.footer p {
+  margin: 0;
+}

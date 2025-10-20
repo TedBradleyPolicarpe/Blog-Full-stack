@@ -1,0 +1,616 @@
+.Background_Insciption {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Jost', sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #23233e);
+}
+
+.main {
+  width: 400px;
+  height: 550px;
+  background:rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #0000;
+  
+}
+
+#chk {
+  display: none;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: aliceblue;
+  font-size: 2.3em; 
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+  font-weight: bold; 
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.harry {
+  width: 80%;
+  height: 45px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px; 
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.harry:focus {
+  border-color: #573b8a;
+  box-shadow: 0 0 5px rgba(87, 59, 138, 0.5);
+  outline: none;
+}
+
+.enfin {
+  width: 80px;
+  height: 40px;
+  display: block;
+  margin: 20px auto; 
+  color: aliceblue;
+  background :linear-gradient(to right, #573b8a, #302b63);
+  font-size: 1em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.enfin:hover {
+  background: linear-gradient(to left, #573b8a, #6d44b8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+
+.login label {
+  color: #573b8a;
+  transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
+/* Style du blog a partir de maintenent */
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+/* Pour le body background  */
+.blog_page{
+  padding-top: 100px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #23233e);
+  background-size:cover ;
+  background-position: center;
+}
+
+
+/* DESIGN DU MENU */
+.header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 32px;
+  color: #e0dede;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 1px;;
+  margin-right: 25px;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Aligne tout à droite */
+  align-items: center;
+  gap: 15px; /* Espacement entre les éléments */
+}
+
+.search {
+  align-items: center;
+  margin-left: 24.375rem; 
+}
+
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 28px;
+  background: #f6f6f6;
+}
+.search-input{
+  font-size: 16px;
+  font-family: "Jost",sans-serif;
+  color: #333333;
+  margin-left: 4px;
+  outline: none;
+  border: none;
+  background: transparent ;
+}
+/*fIN DU DESING MENU */
+
+
+
+/* Modification pour
+La page pour le login ect .... */
+/*.Ajoutercontenue{
+  height: 27vh;;
+  text-align: center;
+  line-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Ajoute un espacement entre les éléments */
+  /*margin-bottom: 30px;
+
+/*}*/
+/* Message de bienvenue */
+/* Message de bienvenue */
+
+
+
+/*DESIGN DU MENU  SECTION BLOG AJOUTE DE CONTENUE */
+.message {
+  margin-bottom: 0.9em;
+  font-weight: bold;
+  color: #e0dede;
+  justify-content: center;
+}
+
+/* Design du bouton Ajouter */
+.Ajouter_Button {
+  width: 110px;
+  height: 100px;
+  color: aliceblue;
+  background: linear-gradient(to right, #573b8a, #302b63);
+  font-size: 1em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  margin-top: 20px; /* Assure un espacement avec les articles */
+}
+
+.Ajouter_Button:hover {
+  background: linear-gradient(to left, #573b8a, #6d44b8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Section contenant le formulaire d'ajout */
+.Ajoutercontenue {
+  height: 27vh;
+  text-align: center;
+  line-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacement entre les éléments */
+  margin-bottom: 30px;
+}
+
+/* Formulaire d'ajout d'article */
+#article-template {
+  background-color: #1a1a3c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#article-template label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#article-template input,
+#article-template textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+/* Section contenant les articles */
+.blog_contenue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement */
+  color: #fff;
+  margin-top: 20px; /* Espace par rapport au haut */
+}
+
+#articles-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr)); /* Une seule colonne adaptative */
+  gap: 20px; /* Espacement entre les articles */
+  width: 80%; /* Largeur de la liste d'articles */
+  margin-bottom: 30px; /* Espace sous les articles pour le bouton */
+}
+
+
+.article-card {
+  background-color: #1a1a3c;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #b02a37;
+}
+
+.article-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.article-card p {
+  margin: 10px 0;
+}
+
+/* Conteneur vertical pour les cartes */
+.vertical-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column; /* Alignement vertical */
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Carte individuelle */
+.article_existent{
+  display: flex;
+  flex-direction: column; /* Alignement vertical */
+  align-items: center; /* Centre les éléments horizontalement */
+  background-color: #1a1a3c;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%; /* Image occupe toute la largeur */
+  max-width: 300px; /* Largeur maximale */
+  height: 200px; /* Taille standardisée */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement les éléments internes */
+  gap: 10px; /* Espacement entre les éléments */
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Actions sur les cartes */
+.card-actions {
+  display: flex;
+  justify-content: center; /* Centre les boutons */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.read-more {
+  background-color: #007bff;
+}
+
+.edit {
+  background-color: #28a745;
+}
+
+.delete {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* PANNEAU DE DETAIL AU CENTRE */
+/* pANNEL edit et read more design  */
+.details-panel {
+  position: fixed;
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ramène le panneau exactement au centre */
+  width: 50%; /* Ajuste la largeur */
+  height:31.25rem; /* Ajuste la hauteur selon le contenu */
+  background-color: #302b63;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none; /* Caché par défaut */
+  z-index: 9999; /* Priorité élevée */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.details-panel.active {
+  display: block; /* Affiche le panneau lorsqu'il est actif */
+}
+
+.details-panel img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+#details-comments-list {
+  list-style: none;
+  padding: 0;
+}
+
+#details-comments-list li {
+  background: #1a1a3c;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#edit-form input,
+#edit-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#edit-form .btn-submit {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#edit-form .btn-submit:hover {
+  background-color: #218838;
+}
+
+
+/* Cacher les éléments par défaut */
+.hidden {
+  display: none;
+}
+body, .blog_page {
+  overflow: visible;
+  position: relative;
+}
+
+.Ajoutercontenue {
+  position: relative;
+  z-index: 1; /* Assurez-vous que ce z-index est inférieur à celui du panneau */
+}
+/* Bouton X (fermer) */
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.logout-btn{
+  width: 85px;
+  height: 25px;
+  color: aliceblue;
+  background :linear-gradient(to right, #573b8a, #302b63);
+  font-size: 0.9em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3)
+
+}
+.logout-btn:hover{
+  background:#e0dede;
+  color:  #6d44b8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  
+}
+.users-section {
+  margin: 30px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.styled-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1em;
+  text-align: left;
+}
+
+.styled-table thead tr {
+  background-color: #573b8a;
+  color: #fff;
+  text-align: center;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #2c2c3e;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #3e3e57;
+}
+
+.styled-table tbody td {
+  text-align: center;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

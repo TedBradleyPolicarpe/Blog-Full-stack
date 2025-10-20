@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<!-- Idjallidaine Adem     -->
+<!-- Ted Bradley Policarpe -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Application Web</title>
+
+    <!-- Ajout de CSS et frameworks externes -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="Background_Insciption">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <!-- Section d'inscription -->
+        <div class="signup">
+            <form id="signupForm">
+              <label for="chk" aria-hidden="true">Sign up</label>
+              <input class="harry" type="text" id="username" name="username" placeholder="Nom utilisateur" required />
+              <input class="harry" type="email" id="email" name="email" placeholder="Email" required />
+              <input class="harry" type="password" id="password" name="password" placeholder="Mot de passe" required />
+              <select class="harry" id="role" name="role" required>
+                <option value="choix">Choix</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+              </select>
+              <button class="enfin" type="submit">Sign up</button>
+            </form>
+          </div>
+          
+
+        <!-- Section de connexion -->
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input class="harry" type="email" name="email" placeholder="Email" required>
+                <input class="harry" type="password" name="password" placeholder="Mot de passe" required>
+                <button class="enfin" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+  
+    <script src="./js/login.js" defer></script>
+
+
+    
+</body>
+
+</html>
