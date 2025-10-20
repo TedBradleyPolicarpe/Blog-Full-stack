@@ -1,5 +1,7 @@
 # Blog Full-Stack (Node.js + Express + SQLite + Supabase Storage)
 
+> L’objectif : démontrer mes compétences en développement full-stack (Node.js, Express, SQLite) et intégration d’API (Supabase) via un projet de blog complet.
+
 Ce projet est un mini blog full-stack :
 
 Backend : Node.js, Express, Knex, SQLite
