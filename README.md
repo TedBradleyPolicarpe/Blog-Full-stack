@@ -99,14 +99,3 @@ Remplace les URLs par tes propres captures (peu importe l’hébergeur : Imgur, 
 
 <p align="center"> Lancer l’application : <br/> <img src="https://i.imgur.com/N6OzrU1.png" height="80%" width="80%" alt="Page Login"/> <br /><br /> Interface Admin (liste + ajout) : <br/> <img src="https://i.imgur.com/dEJir0O.png" height="80%" width="80%" alt="Admin Liste & Ajout"/> <br /><br /> Édition d’un article (prévisualisation image) : <br/> <img src="https://i.imgur.com/1iLFGte.png" height="80%" width="80%" alt="Admin Edition Article"/> <br /><br /> Interface User (lecture d’articles) : <br/> <img src="https://i.imgur.com/hWMAcLe.png" height="80%" width="80%" alt="User Lecture Articles"/> </p>
 
-# 💼 9) Objectif
-
-Ce projet démontre mes compétences en :
-
-Développement full-stack (Node.js + Frontend)
-
-Gestion de base de données avec Knex/SQLite
-
-Intégration d’un service cloud externe (Supabase)
-
-Création d’une interface claire et fonctionnelle
